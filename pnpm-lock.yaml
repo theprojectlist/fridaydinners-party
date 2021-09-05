@@ -3,8 +3,8 @@ lockfileVersion: 5.3
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.11
   '@tsconfig/svelte': ^2.0.1
-  milligram: ^1.4.1
   normalize.css: ^8.0.1
+  skeleton-css: ^2.0.4
   svelte: ^3.37.0
   svelte-check: ^2.1.0
   svelte-preprocess: ^4.7.2
@@ -15,8 +15,8 @@ specifiers:
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.21_svelte@3.42.4+vite@2.5.3
   '@tsconfig/svelte': 2.0.1
-  milligram: 1.4.1
   normalize.css: 8.0.1
+  skeleton-css: 2.0.4
   svelte: 3.42.4
   svelte-check: 2.2.5_svelte@3.42.4
   svelte-preprocess: 4.8.0_svelte@3.42.4+typescript@4.4.2
@@ -300,12 +300,6 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
-  /milligram/1.4.1:
-    resolution: {integrity: sha512-RCgh/boHhcXWOUfKJWm3RJRoUeaEguoipDg0mJ31G0tFfvcpWMUlO1Zlqqr12K4kAXfDlllaidu0x7PaL2PTFg==}
-    dependencies:
-      normalize.css: 8.0.1
-    dev: true
-
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
@@ -417,6 +411,10 @@ packages:
     engines: {node: '>= 6'}
     dependencies:
       mri: 1.1.6
+    dev: true
+
+  /skeleton-css/2.0.4:
+    resolution: {integrity: sha1-1w2y8B/oIJrHny9O7oP66KQFkbg=}
     dev: true
 
   /source-map-js/0.6.2:

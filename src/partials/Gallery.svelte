@@ -7,35 +7,39 @@
   import shoebench from "../assets/shoebench.jpg";
   import squid from "../assets/squid.jpg";
   import table from "../assets/table.jpg";
+
+  let images = [
+    [
+      [sandwich, "Char sandwich presentation"],
+      [cutting, "Meg cutting buns"],
+      [grilling, "Colin and Elias grilling the Char"],
+    ],
+    [
+      [squid, "Squid-like charred kielbasa"],
+      [elias, "Elias happily grilling Char"],
+    ],
+    [
+      [buns, "Nice buns"],
+      [table, "Eating together"],
+      [shoebench, "Presenting the suite shoebench"],
+    ],
+  ];
 </script>
 
-<div class="row">
-  <div class="column">
-    <img src={sandwich} alt="Char sandwich presentation" />
-  </div>
-  <div class="column">
-    <img src={cutting} alt="Meg cutting buns" />
-  </div>
-  <div class="column">
-    <img src={grilling} alt="Colin and Elias grilling the Char" />
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img src={squid} alt="Squid-like charred kielbasa" />
-  </div>
-  <div class="column">
-    <img src={elias} alt="Elias happily grilling Char" />
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img src={buns} alt="Nice buns" />
-  </div>
-  <div class="column">
-    <img src={table} alt="Eating together" />
-  </div>
-  <div class="column">
-    <img src={shoebench} alt="Presenting the suite shoebench" />
-  </div>
-</div>
+<section id="gallery" class="container">
+  {#each images as row}
+    <div class="row">
+      {#each row as image}
+        <div class="one-{row.length == 3 ? 'third' : 'half'} column">
+          <img class="u-max-full-width" src={image[0]} alt={image[1]} />
+        </div>
+      {/each}
+    </div>
+  {/each}
+</section>
+
+<style>
+  #gallery {
+    margin-top: 3rem;
+  }
+</style>
