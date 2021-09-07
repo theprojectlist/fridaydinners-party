@@ -1,0 +1,19 @@
+fridaydinners.party {
+    header {
+        Permissions-Policy "interest-cohort=()"
+        Referrer-Policy no-referrer
+        Strict-Transport-Security "max-age=63115200; includeSubDomains"
+        Content-Security-Policy "default-src 'none'; style-src 'self'; img-src 'self'; script-src 'self'; font-src 'fonts.googleapis.com'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'"
+        X-Frame-Options DENY
+        X-Content-Type-Options nosniff
+        X-XSS-Protection "1; mode=block"
+    }
+    header /assets/*.jpg Cache-Control "private; max-age=31557600; immutable"
+
+    root * /etc/caddy/fridaydinners-party/dist
+    file_server
+
+    encode gzip
+
+    reverse_proxy /api/* localhost:80
+}
