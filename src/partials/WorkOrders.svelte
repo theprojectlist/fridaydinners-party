@@ -34,8 +34,8 @@
   async function submitWorkOrder(e: Event) {
     let target = e.target as HTMLFormElement;
     let data = new FormData(target);
-    console.log(data);
 
+    data.append("status", "false");
     await fetch(`${workorderEndpoint}/workorder`, {
       method: "PUT",
       body: data,
