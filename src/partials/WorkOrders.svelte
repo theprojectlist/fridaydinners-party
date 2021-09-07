@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte";
+  let workorderEndpoint = "https://fridaydinners.party/api";
 
   class WorkOrder {
     id: number;
@@ -20,42 +21,45 @@
     }
   }
 
-  // populate work orders on page load
   let worders: WorkOrder[] = [];
-  onMount(async () => {
-    worders = await fetch("https://fridaydinners.party/api/workorders")
+
+  // populate work orders on page load
+  async function updateOrders() {
+    worders = await fetch(`${workorderEndpoint}/workorders`)
       .then((res) => (!res.ok ? [] : res.json()))
-      .catch(() => [
-        // {
-        //   id: 43,
-        //   requester: "Elias",
-        //   description:
-        //     "dqwdjqwd qwidoqiwdj ooqowdiqoidjodjoqdj dw oqiwjdoqidjoi oqiwjdoqidj oooo qoiwdjo oqijwdoqiwd",
-        //   status: true,
-        // },
-      ]);
-  });
+      .catch(() => []);
+  }
 
   // submit new work orders
-  async function submitWorkOrder() {}
+  async function submitWorkOrder(e: Event) {
+    let target = e.target as HTMLFormElement;
+    let data = new FormData(target);
+    console.log(data);
+
+    await fetch(`${workorderEndpoint}/workorder`, {
+      method: "PUT",
+      body: data,
+    });
+    await updateOrders();
+  }
 
   // update work order status whenever the checkbox is clicked
   async function updateStatus(e: MouseEvent) {
     let target = e.target as HTMLInputElement;
+    let id = target.getAttribute("data-id");
 
-    await fetch("https://fridaydinners.party/api/workorder", {
-      method: "POST",
+    await fetch(`${workorderEndpoint}/workorder/${id}`, {
+      method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ status: target.checked }),
-    }).catch(() =>
-      alert(
-        "Failed to update status for work order #" +
-          target.getAttribute("data-id")
-      )
-    );
+      body: JSON.stringify({
+        status: target.checked,
+      }),
+    }).catch(() => alert("Failed to update status for work order #" + id));
   }
+
+  onMount(updateOrders);
 </script>
 
 <section id="workorders" class="container">
@@ -64,21 +68,28 @@
   <div class="row">
     <div class="column one-half">
       <form on:submit|preventDefault={submitWorkOrder}>
-        <label for="requesterInput">Your name</label>
+        <label for="requester">Your name *</label>
         <input
-          id="requesterInput"
+          id="requester"
+          name="requester"
           class="u-full-width"
           type="text"
           placeholder="Elias Gabriel"
+          required
         />
-        <label for="descriptionInput">Description of service</label>
-        <textarea class="u-full-width" placeholder="" id="descriptionInput" />
+        <label for="description">Description of service *</label>
+        <textarea
+          id="description"
+          class="u-full-width"
+          name="description"
+          required
+        />
         <input class="button-primary" type="submit" value="Submit" />
       </form>
     </div>
 
     <div class="column one-half">
-      <table>
+      <table class="u-full-width">
         <thead>
           <tr>
             <th>Description</th>
@@ -100,11 +111,13 @@
                 /></td
               >
             </tr>
-          {:else}
-            <h5 class="u-full-width">There's nothing to do.</h5>
           {/each}
         </tbody>
       </table>
+
+      {#if !worders.length}
+        <h5>There's nothing to do.</h5>
+      {/if}
     </div>
   </div>
 </section>
@@ -112,5 +125,9 @@
 <style>
   h5 {
     margin-top: 1rem;
+  }
+
+  table {
+    margin-bottom: 0;
   }
 </style>

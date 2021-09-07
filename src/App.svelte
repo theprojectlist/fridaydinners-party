@@ -9,11 +9,11 @@
     <div class="img u-full-width" alt="The whole gang, except Meagan" />
     <div class="container">
       <h1 class="row">
-        <span class="columns three">📐🍱🥑</span>
+        <span class="columns three">📐 🍱 🥑</span>
         <strong class="columns six"
           >fridaydinners<span class="text-rainbow">.party</span></strong
         >
-        <span class="columns three">🥢🔨🍴</span>
+        <span class="columns three">🥢 🔨 🍴</span>
       </h1>
     </div>
   </header>
@@ -56,11 +56,12 @@
     margin-top: 2rem;
     border-top: 1px solid;
     border-bottom: 1px solid;
+    max-width: 480px;
   }
 
   nav ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
     margin: 0;
@@ -68,8 +69,9 @@
 
   nav ul li {
     text-transform: uppercase;
-    padding: 0 3rem;
     margin: 0;
+    text-align: center;
+    flex: 0 1 auto;
   }
 
   nav ul li a {
