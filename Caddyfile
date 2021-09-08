@@ -15,5 +15,5 @@ fridaydinners.party {
 
     encode gzip
 
-    reverse_proxy /api/* localhost:80
+    reverse_proxy /api/* 0.0.0.0:80
 }
