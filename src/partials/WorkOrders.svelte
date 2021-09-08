@@ -35,6 +35,7 @@
     let target = e.target as HTMLFormElement;
     let data = new FormData(target);
 
+    target.reset();
     await fetch(`${workorderEndpoint}/workorder`, {
       method: "POST",
       body: data,
