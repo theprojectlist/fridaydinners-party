@@ -37,7 +37,7 @@
 
     data.append("status", "false");
     await fetch(`${workorderEndpoint}/workorder`, {
-      method: "PUT",
+      method: "POST",
       body: data,
     });
     await updateOrders();
