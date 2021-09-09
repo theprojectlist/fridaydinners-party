@@ -48,7 +48,7 @@
     await fetch(`${workorderEndpoint}/workorder`, {
       method: "POST",
       body: data,
-    }).catch((e) => console.log(e));
+    }).catch(() => alert("Failed to submit the new work order."));
     await updateOrders();
   }
 
@@ -65,8 +65,9 @@
       body: JSON.stringify({
         status: target.value,
       }),
-    }).catch(() => alert("Failed to update status for work order #" + id));
-    await updateOrders();
+    })
+      .then(async () => await updateOrders())
+      .catch(() => alert("Failed to update status for work order #" + id));
   }
 
   onMount(updateOrders);
