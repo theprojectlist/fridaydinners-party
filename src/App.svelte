@@ -9,11 +9,11 @@
     <div class="img u-full-width" alt="The whole gang, except Meagan" />
     <div class="container">
       <h1 class="row">
-        <span class="columns three">📐 🍱 🥑</span>
+        <span class="columns three">📐🍱🥑</span>
         <strong class="columns six"
           >fridaydinners<span class="text-rainbow">.party</span></strong
         >
-        <span class="columns three">🥢 🔨 🍴</span>
+        <span class="columns three">🥢🔨🍴</span>
       </h1>
     </div>
   </header>
