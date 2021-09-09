@@ -1,6 +1,6 @@
 # fridaydinners-party
 
-The webstie for Friday Dinners' shenanigans, built with Vite and Svelte on pnpm.
+The website for Friday Dinners' shenanigans, built with Vite and Svelte on pnpm.
 
 <https://fridaydinners.party>
 
