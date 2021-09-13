@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Gallery from "./partials/Gallery.svelte";
   import Meals from "./partials/Meals.svelte";
   import WorkOrders from "./partials/WorkOrders.svelte";
 </script>
@@ -27,7 +26,6 @@
   </nav>
 
   <Meals />
-  <Gallery />
   <WorkOrders />
 
   <footer class="container">
@@ -35,8 +33,8 @@
   </footer>
 </main>
 
-<style>
-  @import "https://fonts.googleapis.com/css?family=Raleway:400,300,600";
+<style lang="scss">
+  @import "https://fonts.googleapis.com/css?family=Raleway:400,300,600&display=swap";
   @import "normalize.css";
   @import "skeleton-css/css/skeleton.css";
 
@@ -45,7 +43,7 @@
   }
 
   header .img {
-    background-image: url("./assets/background.jpg");
+    background-image: url("/background.jpg");
     background-size: cover;
     background-position: center;
     height: 50rem;
@@ -57,32 +55,32 @@
     border-top: 1px solid;
     border-bottom: 1px solid;
     max-width: 480px;
-  }
 
-  nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    list-style: none;
-    margin: 0;
-  }
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      list-style: none;
+      margin: 0;
 
-  nav ul li {
-    text-transform: uppercase;
-    margin: 0;
-    text-align: center;
-    flex: 0 1 auto;
-  }
+      li {
+        text-transform: uppercase;
+        margin: 0;
+        text-align: center;
+        flex: 0 1 auto;
 
-  nav ul li a {
-    text-decoration: none;
-    color: #222;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-  }
+        a {
+          text-decoration: none;
+          color: #222;
+          letter-spacing: 0.2rem;
+          font-weight: 600;
 
-  nav ul li a:hover {
-    color: #0fa0ce !important;
+          &:hover {
+            color: #0fa0ce !important;
+          }
+        }
+      }
+    }
   }
 
   .text-rainbow {
@@ -95,7 +93,6 @@
       orange,
       red
     );
-    -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }

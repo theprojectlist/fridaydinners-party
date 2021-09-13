@@ -1,0 +1,27 @@
+[
+    {
+        "Sandwiches": [
+            "HomeMade Milk Brioche",
+            "Grilled Atlantic Char",
+            "Tomato Ginger Chutney",
+            "Arugula + Balsamic"
+        ],
+        "others": [
+            "Side Greens",
+            "Kielbasa",
+            "Browned Butter Blonides",
+            "Moscow Mules"
+        ]
+    },
+    {
+        "Spaghetti and Meatballs": [
+            "1/3 each Beef, Pork, Veal Meatballs (and Beyond)",
+            "Tomato Basil Marinara",
+            "Thin Spaghetti"
+        ],
+        "others": [
+            "Homemade Garlic Knots",
+            "Side Green Salad"
+        ]
+    }
+]

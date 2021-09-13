@@ -156,7 +156,7 @@
   </div>
 </section>
 
-<style>
+<style lang="scss">
   h3 {
     margin: 6rem 0 4rem 0;
   }
@@ -168,10 +168,10 @@
   table {
     margin-bottom: 0;
     margin-top: 0rem;
-  }
 
-  table select {
-    margin-bottom: 0;
+    select {
+      margin-bottom: 0;
+    }
   }
 
   nav ul {
@@ -180,34 +180,34 @@
     align-items: center;
     list-style: none;
     margin-bottom: 1rem;
-  }
 
-  nav ul li {
-    text-transform: uppercase;
-    margin: 0;
-    text-align: center;
-    flex: 0 1 auto;
-    text-decoration: none;
-    color: #222;
-    letter-spacing: 0.2rem;
-    font-weight: 600;
-    cursor: pointer;
-    padding-bottom: 1rem;
-  }
+    li {
+      text-transform: uppercase;
+      margin: 0;
+      text-align: center;
+      flex: 0 1 auto;
+      text-decoration: none;
+      color: #222;
+      letter-spacing: 0.2rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding-bottom: 1rem;
+    }
 
-  nav ul .selected {
-    position: relative;
-    text-decoration: underline;
-  }
+    .selected {
+      position: relative;
+      text-decoration: underline;
 
-  nav ul .selected::after {
-    content: "▼";
-    font-size: 1.5rem;
-    position: absolute;
-    top: calc(100% - 1em);
-    left: calc(50% - 0.5em);
-    transform: translate(-50% -50%);
-    color: black;
+      &::after {
+        content: "\25BC";
+        font-size: 1.5rem;
+        position: absolute;
+        top: calc(100% - 1em);
+        left: calc(50% - 0.5em);
+        transform: translate(-50% -50%);
+        color: black;
+      }
+    }
   }
 
   p {
