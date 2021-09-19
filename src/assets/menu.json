@@ -1,7 +1,7 @@
 [
     {
         "Sandwiches": [
-            "HomeMade Milk Brioche",
+            "Milkbun Brioche",
             "Grilled Atlantic Char",
             "Tomato Ginger Chutney",
             "Arugula + Balsamic"
@@ -20,8 +20,21 @@
             "Thin Spaghetti"
         ],
         "others": [
-            "Homemade Garlic Knots",
+            "Garlic Knots",
             "Side Green Salad"
+        ]
+    },
+    {
+        "Ramen": [
+            "Chicken Bone Shōyu Broth",
+            "Noodles",
+            "Baby Corn",
+            "Stir-Fried Bok Choy",
+            "Sautéed Shiitake Mushrooms",
+            "Marinated Soft-boiled Eggs",
+            "Enoki Mushrooms",
+            "Edamame",
+            "Gogujang + Roasted Garlic Oil"
         ]
     }
 ]
