@@ -21,19 +21,19 @@
     },
     {
         "can_of_corn": "A can of mini corn, on a stove",
-        "cart": "The cart with ramen goods",
-        "elias":"Elias drinking ramen broth",
         "onions": "Sizzling onions on the stove",
         "pour": "The onions moving to a plate",
         "ramen": "The final ramen, tv ad edition",
-        "ramen2": "More ramen, carpet edition"
+        "cart": "The cart with ramen goods",
+        "ramen2": "More ramen, carpet edition",
+        "elias": "Elias drinking ramen broth"
     },
     {
+        "katie": "Katie, as seen by Nathan",
         "cooking": "Colin, Duncan, and Dieter cooking",
         "dumplings": "A lot of fried pork dumplings",
         "elias_chop_fish": "Elias chopping white fish filling",
         "folding": "A dumpling being folded",
-        "katie": "Katie, as seen by Nathan",
         "rolling": "The dumplings dough being rolled",
         "sizzling": "Dumplings frying in a cast iron"
     }
