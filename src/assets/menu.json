@@ -36,5 +36,30 @@
             "Edamame",
             "Gogujang + Roasted Garlic Oil"
         ]
+    },
+    {
+        "Pork and Cabbage Dumplings": [
+            "Ground Pork",
+            "Napa Cabbage",
+            "Scallions",
+            "Ginger",
+            "Soy Sauce",
+            "Chinese Cooking Wine",
+            "Mirin"
+        ],
+        "Cod and Chive Dumplings": [
+            "Chopped Fresh Cod",
+            "Fresh Chives",
+            "Scallions",
+            "Ginger",
+            "Soy Sauce",
+            "Chinese Cooking Wine",
+            "Mirin"
+        ],
+        "others": [
+            "Scallion Pancakes",
+            "Gogujang + Roasted Garlic Oil",
+            "Dumpling Sauce"
+        ]
     }
 ]
