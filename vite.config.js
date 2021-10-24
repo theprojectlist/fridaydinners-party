@@ -11,6 +11,7 @@ export default defineConfig({
       ]
     })
   ],
+  assetsInclude: ["**/*.gz"],
   build: {
     terserOptions: {
       toplevel: true,
@@ -20,6 +21,12 @@ export default defineConfig({
         passes: 2,
         toplevel: true,
         unsafe: true
+      }
+    },
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        beans: 'games/beans/index.html'
       }
     }
   }
