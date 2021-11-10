@@ -18,7 +18,7 @@
 
 <main>
   <div class="container">
-    <h1>Meagan's Hats!</h1>
+    <h1>Meagan's Hats! ⛰️</h1>
 
     <p>
       Alright y'all, here's what's going on: if you haven't heard, <a
@@ -42,7 +42,7 @@
     </p>
 
     <p>
-      Tell you friends! Tell your family! Buy for Christmasor other winter
+      Tell you friends! Tell your family! Buy for Christmas or other winter
       holidays!
     </p>
 
@@ -58,7 +58,7 @@
   </div>
 
   <footer class="container">
-    <p>Crocheted 🧶 for cash by hand</p>
+    <p>Crocheted 🧶 for cash by hand 💸</p>
   </footer>
 </main>
 
@@ -72,7 +72,6 @@
   }
 
   .container {
-    width: 40%;
     margin-top: 5rem;
 
     h1 {
