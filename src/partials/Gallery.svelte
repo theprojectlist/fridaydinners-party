@@ -2,10 +2,19 @@
   import gallery from "../assets/gallery.json";
 
   export let week: number;
+  let layout: Uint8Array;
   let entries: Array<[string, string]>;
   let rows: Array<Array<[string, string]>>;
-  $: entries = Object.entries<string>(gallery[week]);
-  $: rows = [entries.splice(0, 3), entries.splice(0, 2), entries.splice(0, 3)];
+
+  $: {
+    layout = gallery[week]["_layout"];
+    entries = Object.entries<string>(gallery[week]).splice(1);
+    rows = [
+      entries.splice(0, layout[0]),
+      entries.splice(0, layout[1]),
+      entries.splice(0, layout[2]),
+    ];
+  }
 </script>
 
 <section id="gallery" class="container">
@@ -23,3 +32,10 @@
     </div>
   {/each}
 </section>
+
+<style lang="scss">
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+</style>

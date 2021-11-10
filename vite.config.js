@@ -1,14 +1,13 @@
 import { svelte } from '@sveltejs/vite-plugin-svelte';
-import { sass, typescript } from 'svelte-preprocess';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [
     svelte({
-      preprocess: [
-        typescript(),
-        sass({ charset: false }),
-      ]
+      onwarn(warning, defaultHandler) {
+        if (warning.code === 'component-name-lowercase') return;
+        defaultHandler(warning);
+      }
     })
   ],
   build: {

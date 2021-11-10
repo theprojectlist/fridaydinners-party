@@ -1,5 +1,5 @@
-[
-    {
+{
+    "Sep 03 2021": {
         "Sandwiches": [
             "Milkbun Brioche",
             "Grilled Atlantic Char",
@@ -13,7 +13,7 @@
             "Moscow Mules"
         ]
     },
-    {
+    "Sep 10 2021": {
         "Spaghetti and Meatballs": [
             "1/3 each Beef, Pork, Veal Meatballs (and Beyond)",
             "Tomato Basil Marinara",
@@ -24,7 +24,7 @@
             "Side Green Salad"
         ]
     },
-    {
+    "Sep 17 2021": {
         "Ramen": [
             "Chicken Bone Shōyu Broth",
             "Noodles",
@@ -37,7 +37,7 @@
             "Gogujang + Roasted Garlic Oil"
         ]
     },
-    {
+    "Sep 24 2021": {
         "Pork and Cabbage Dumplings": [
             "Ground Pork",
             "Napa Cabbage"
@@ -51,5 +51,37 @@
             "Gogujang + Roasted Garlic Oil",
             "Dumpling Sauce"
         ]
+    },
+    "Oct 22 2021": {
+        "Borgatti's Ravioli": [
+            "Cheese",
+            "Meat and Spinach"
+        ],
+        "others": [
+            "San Marzano Red Sauce",
+            "Apple Crumble",
+            "Strawberry Shortcake"
+        ]
+    },
+    "Nov 05 2021": {
+        "Miso-Glazed Sable": [
+            "Sablefish Fillets",
+            "White Miso",
+            "Mirin",
+            "Rice Vinegar",
+            "Water"
+        ],
+        "Fried Rice": [
+            "Chopped Broccoli",
+            "Edamame",
+            "Shaved Carrot",
+            "Julienned Red Pepper",
+            "Oyster Sauce",
+            "Soy Sauce"
+        ],
+        "others": [
+            "Roasted Brussel Sprouts",
+            "Roasted Delicata Squash"
+        ]
     }
-]
+}

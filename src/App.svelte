@@ -1,6 +1,5 @@
 <script lang="ts">
   import Meals from "./partials/Meals.svelte";
-  import WorkOrders from "./partials/WorkOrders.svelte";
 </script>
 
 <main>
@@ -21,13 +20,13 @@
     <ul>
       <li><a href="#meals">Menu</a></li>
       <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#workorders">Work Orders</a></li>
+      <!-- <li><a href="#workorders">Work Orders</a></li> -->
       <li><a href="/meaganshats/">Meagan's Hats</a></li>
     </ul>
   </nav>
 
   <Meals />
-  <WorkOrders />
+  <!-- <WorkOrders /> -->
 
   <footer class="container">
     <p>Sprouted 🌱 at Olin and without 🥜</p>

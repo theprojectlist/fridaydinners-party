@@ -2,15 +2,15 @@
   import menus from "../assets/menu.json";
   import Gallery from "./Gallery.svelte";
 
-  const MS_PER_WEEK = 1000 * 60 * 60 * 24 * 7;
-  const SUITE_START = new Date("9/3/2021").getTime();
-
-  let week = Math.min(
-    Math.floor((Date.now() - SUITE_START) / MS_PER_WEEK),
-    menus.length - 1
-  );
+  let entries: Array<[string, object]> = Object.entries<object>(menus);
+  let week = entries.length - 1;
   let label: string;
-  $: label = new Date(SUITE_START + week * MS_PER_WEEK).toDateString().slice(4);
+  let menu: Array<[string, Array<string>]>;
+
+  $: {
+    label = entries[week][0];
+    menu = Object.entries(entries[week][1]);
+  }
 </script>
 
 <section id="meals" class="container">
@@ -22,13 +22,13 @@
         >
         <span>Menu</span>
         <small
-          class:disabled={week >= menus.length - 1}
+          class:disabled={week >= entries.length - 1}
           on:click={() => (week += 1)}>&gt;&gt;</small
         >
         <p>{label}</p>
       </h3>
       <ul>
-        {#each Object.entries(menus[week]) as entry}
+        {#each menu as entry}
           {#if entry[0] != "others"}
             <li>
               {entry[0]}
