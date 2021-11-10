@@ -22,6 +22,7 @@
       <li><a href="#meals">Menu</a></li>
       <li><a href="#gallery">Gallery</a></li>
       <li><a href="#workorders">Work Orders</a></li>
+      <li><a href="/meaganshats/">Meagan's Hats</a></li>
     </ul>
   </nav>
 

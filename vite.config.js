@@ -11,7 +11,6 @@ export default defineConfig({
       ]
     })
   ],
-  assetsInclude: ["**/*.gz"],
   build: {
     terserOptions: {
       toplevel: true,
@@ -26,7 +25,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        beans: 'games/beans/index.html'
+        hats: 'meaganshats/index.html'
       }
     }
   }
