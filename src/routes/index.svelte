@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Meals from "$lib/Meals.svelte";
+  import Menu from "$lib/Menu.svelte";
 </script>
 
 <header>
@@ -17,13 +17,13 @@
 
 <nav class="container">
   <ul>
-    <li><a href="#meals">Menu</a></li>
+    <li><a href="#menu">Menu</a></li>
     <li><a href="#gallery">Gallery</a></li>
     <li><a href="/pct">Meagan's Hats</a></li>
   </ul>
 </nav>
 
-<Meals />
+<Menu />
 
 <footer class="container">
   <p>Sprouted 🌱 at Olin and without 🥜</p>
@@ -39,7 +39,7 @@
     }
 
     h1 {
-      letter-spacing: 0.125rem;
+      letter-spacing: 0.25rem;
     }
   }
 

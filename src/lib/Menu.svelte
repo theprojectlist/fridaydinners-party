@@ -13,7 +13,7 @@
   }
 </script>
 
-<section id="meals" class="container">
+<section id="menu" class="container">
   <div class="row">
     <div class="column">
       <h3>
@@ -49,7 +49,7 @@
 <Gallery {week} />
 
 <style lang="scss">
-  #meals {
+  #menu {
     h3 {
       p {
         margin: 0;

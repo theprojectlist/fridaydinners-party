@@ -13,7 +13,7 @@
     rows = [
       entries.splice(0, layout[0]),
       entries.splice(0, layout[1]),
-      entries.splice(0, layout[2])
+      entries.splice(0, layout[2]),
     ];
   }
 </script>
