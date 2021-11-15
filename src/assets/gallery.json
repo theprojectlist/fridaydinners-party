@@ -1,86 +1,72 @@
 [
-    {
-        "_layout": [
-            3,
-            2,
-            3
-        ],
-        "sandwich": "Char sandwich presentation",
-        "cutting": "Meg cutting buns",
-        "grilling": "Colin and Elias grilling the Char",
-        "squid": "Squid-like charred kielbasa",
-        "elias": "Elias happily grilling Char",
-        "buns": "Nice buns",
-        "table": "Eating together",
-        "shoebench": "Presenting the suite shoebench"
-    },
-    {
-        "_layout": [
-            3,
-            2,
-            3
-        ],
-        "beyond": "Beyond meatballs",
-        "colin": "Colin with the food",
-        "elias_nathan": "Elias and Nathan cooking",
-        "pasta": "All the pasta and sauce",
-        "food": "A plated presentation of Beyond meatballs",
-        "carpet": "A plated presentation of the real meatballs",
-        "laughing": "Elias and Colin laughing",
-        "cart": "Colin and Elias moving the food and cart"
-    },
-    {
-        "_layout": [
-            3,
-            2,
-            2
-        ],
-        "can_of_corn": "A can of mini corn, on a stove",
-        "onions": "Sizzling onions on the stove",
-        "pour": "The onions moving to a plate",
-        "ramen": "The final ramen, tv ad edition",
-        "cart": "The cart with ramen goods",
-        "ramen2": "More ramen, carpet edition",
-        "elias": "Elias drinking ramen broth"
-    },
-    {
-        "_layout": [
-            3,
-            2,
-            2
-        ],
-        "katie": "Katie, as seen by Nathan",
-        "cooking": "Colin, Duncan, and Dieter cooking",
-        "dumplings": "A lot of fried pork dumplings",
-        "elias_chop_fish": "Elias chopping white fish filling",
-        "folding": "A dumpling being folded",
-        "rolling": "The dumplings dough being rolled",
-        "sizzling": "Dumplings frying in a cast iron"
-    },
-    {
-        "_layout": [
-            2,
-            2,
-            2
-        ],
-        "pots": "Marinara and a boiling pot",
-        "pastabowl": "The ravioli in a bowl",
-        "pastabox": "The ravioli in the Borgatti's box",
-        "cart": "The pasta in a bowl dressed with chiffonaded basil",
-        "crumble": "The apple crisp",
-        "dessert": "The crisp and strawberry shortcake"
-    },
-    {
-        "_layout": [
-            3,
-            2,
-            1
-        ],
-        "cooking": "Elias and Colin cooking",
-        "fish": "Elias portioning the Sable",
-        "elias_hands": "Elias showing Colin's mitts",
-        "veggies": "Veggies being cooked",
-        "oven": "Brussel sprouts and squash in the oven",
-        "plate": "The plated food"
-    }
+  {
+    "_layout": [3, 2, 3],
+    "sandwich": "Char sandwich presentation",
+    "cutting": "Meg cutting buns",
+    "grilling": "Colin and Elias grilling the Char",
+    "squid": "Squid-like charred kielbasa",
+    "elias": "Elias happily grilling Char",
+    "buns": "Nice buns",
+    "table": "Eating together",
+    "shoebench": "Presenting the suite shoebench"
+  },
+  {
+    "_layout": [3, 2, 3],
+    "beyond": "Beyond meatballs",
+    "colin": "Colin with the food",
+    "elias_nathan": "Elias and Nathan cooking",
+    "pasta": "All the pasta and sauce",
+    "food": "A plated presentation of Beyond meatballs",
+    "carpet": "A plated presentation of the real meatballs",
+    "laughing": "Elias and Colin laughing",
+    "cart": "Colin and Elias moving the food and cart"
+  },
+  {
+    "_layout": [3, 2, 2],
+    "can_of_corn": "A can of mini corn, on a stove",
+    "onions": "Sizzling onions on the stove",
+    "pour": "The onions moving to a plate",
+    "ramen": "The final ramen, tv ad edition",
+    "cart": "The cart with ramen goods",
+    "ramen2": "More ramen, carpet edition",
+    "elias": "Elias drinking ramen broth"
+  },
+  {
+    "_layout": [3, 2, 2],
+    "katie": "Katie, as seen by Nathan",
+    "cooking": "Colin, Duncan, and Dieter cooking",
+    "dumplings": "A lot of fried pork dumplings",
+    "elias_chop_fish": "Elias chopping white fish filling",
+    "folding": "A dumpling being folded",
+    "rolling": "The dumplings dough being rolled",
+    "sizzling": "Dumplings frying in a cast iron"
+  },
+  {
+    "_layout": [2, 2, 2],
+    "pots": "Marinara and a boiling pot",
+    "pastabowl": "The ravioli in a bowl",
+    "pastabox": "The ravioli in the Borgatti's box",
+    "cart": "The pasta in a bowl dressed with chiffonaded basil",
+    "crumble": "The apple crisp",
+    "dessert": "The crisp and strawberry shortcake"
+  },
+  {
+    "_layout": [3, 2, 1],
+    "cooking": "Elias and Colin cooking",
+    "fish": "Elias portioning the Sable",
+    "elias_hands": "Elias showing Colin's mitts",
+    "veggies": "Veggies being cooked",
+    "oven": "Brussel sprouts and squash in the oven",
+    "plate": "The plated food"
+  },
+  {
+    "_layout": [2, 3, 2],
+    "roux": "Roux and holy trinity in progress",
+    "breads": "The bread bowls, uncooked",
+    "okra": "Frying okra",
+    "baking": "The bread bowls in the oven",
+    "deglazing": "Deglazing the cast iron",
+    "bowl": "The gumbo in the bowl",
+    "death": "Nathan and Colin extremely full"
+  }
 ]

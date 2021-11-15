@@ -1,11 +1,24 @@
-import sass from 'sass'
-import sveltePreprocess from 'svelte-preprocess'
+import preprocess from "svelte-preprocess";
+import adapter from "@sveltejs/adapter-static";
+import cssnano from "cssnano";
+import autoprefixer from "autoprefixer";
 
-export default {
-  preprocess: sveltePreprocess({
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+  preprocess: preprocess({
     sass: {
-      renderSync: true,
-      implementation: sass
+      renderSync: true
+    },
+    postcss: {
+      plugins: [autoprefixer(), cssnano({ preset: "advanced" })]
     }
-  })
-}
+  }),
+  kit: {
+    target: "#svelte",
+    adapter: adapter({
+      pages: "docs"
+    })
+  }
+};
+
+export default config;

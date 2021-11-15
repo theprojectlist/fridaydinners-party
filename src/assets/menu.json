@@ -1,87 +1,71 @@
 {
-    "Sep 03 2021": {
-        "Sandwiches": [
-            "Milkbun Brioche",
-            "Grilled Atlantic Char",
-            "Tomato Ginger Chutney",
-            "Arugula + Balsamic"
-        ],
-        "others": [
-            "Side Greens",
-            "Kielbasa",
-            "Browned Butter Blonides",
-            "Moscow Mules"
-        ]
-    },
-    "Sep 10 2021": {
-        "Spaghetti and Meatballs": [
-            "1/3 each Beef, Pork, Veal Meatballs (and Beyond)",
-            "Tomato Basil Marinara",
-            "Thin Spaghetti"
-        ],
-        "others": [
-            "Garlic Knots",
-            "Side Green Salad"
-        ]
-    },
-    "Sep 17 2021": {
-        "Ramen": [
-            "Chicken Bone Shōyu Broth",
-            "Noodles",
-            "Baby Corn",
-            "Stir-Fried Bok Choy",
-            "Sautéed Shiitake Mushrooms",
-            "Marinated Soft-boiled Eggs",
-            "Enoki Mushrooms",
-            "Edamame",
-            "Gogujang + Roasted Garlic Oil"
-        ]
-    },
-    "Sep 24 2021": {
-        "Pork and Cabbage Dumplings": [
-            "Ground Pork",
-            "Napa Cabbage"
-        ],
-        "Cod and Chive Dumplings": [
-            "Chopped Fresh Cod",
-            "Fresh Chives"
-        ],
-        "others": [
-            "Scallion Pancakes",
-            "Gogujang + Roasted Garlic Oil",
-            "Dumpling Sauce"
-        ]
-    },
-    "Oct 22 2021": {
-        "Borgatti's Ravioli": [
-            "Cheese",
-            "Meat and Spinach"
-        ],
-        "others": [
-            "San Marzano Red Sauce",
-            "Apple Crumble",
-            "Strawberry Shortcake"
-        ]
-    },
-    "Nov 05 2021": {
-        "Miso-Glazed Sable": [
-            "Sablefish Fillets",
-            "White Miso",
-            "Mirin",
-            "Rice Vinegar",
-            "Water"
-        ],
-        "Fried Rice": [
-            "Chopped Broccoli",
-            "Edamame",
-            "Shaved Carrot",
-            "Julienned Red Pepper",
-            "Oyster Sauce",
-            "Soy Sauce"
-        ],
-        "others": [
-            "Roasted Brussel Sprouts",
-            "Roasted Delicata Squash"
-        ]
-    }
+  "Sep 03 2021": {
+    "Sandwiches": [
+      "Milkbun Brioche",
+      "Grilled Atlantic Char",
+      "Tomato Ginger Chutney",
+      "Arugula + Balsamic"
+    ],
+    "others": ["Side Greens", "Kielbasa", "Browned Butter Blonides", "Moscow Mules"]
+  },
+  "Sep 10 2021": {
+    "Spaghetti and Meatballs": [
+      "1/3 each Beef, Pork, Veal Meatballs (and Beyond)",
+      "Tomato Basil Marinara",
+      "Thin Spaghetti"
+    ],
+    "others": ["Garlic Knots", "Side Green Salad"]
+  },
+  "Sep 17 2021": {
+    "Ramen": [
+      "Chicken Bone Shōyu Broth",
+      "Noodles",
+      "Baby Corn",
+      "Stir-Fried Bok Choy",
+      "Sautéed Shiitake Mushrooms",
+      "Marinated Soft-boiled Eggs",
+      "Enoki Mushrooms",
+      "Edamame",
+      "Gogujang + Roasted Garlic Oil"
+    ]
+  },
+  "Sep 24 2021": {
+    "Pork and Cabbage Dumplings": ["Ground Pork", "Napa Cabbage"],
+    "Cod and Chive Dumplings": ["Chopped Fresh Cod", "Fresh Chives"],
+    "others": ["Scallion Pancakes", "Gogujang + Roasted Garlic Oil", "Dumpling Sauce"]
+  },
+  "Oct 22 2021": {
+    "Borgatti's Ravioli": ["Cheese", "Meat and Spinach"],
+    "others": ["San Marzano Red Sauce", "Apple Crumble", "Strawberry Shortcake"]
+  },
+  "Nov 05 2021": {
+    "Miso-Glazed Sable": [
+      "Sablefish Fillets",
+      "White Miso",
+      "Mirin",
+      "Rice Vinegar",
+      "Water"
+    ],
+    "Fried Rice": [
+      "Chopped Broccoli",
+      "Edamame",
+      "Shaved Carrot",
+      "Julienned Red Pepper",
+      "Oyster Sauce",
+      "Soy Sauce"
+    ],
+    "others": ["Roasted Brussel Sprouts", "Roasted Delicata Squash"]
+  },
+  "Nov 12 2021": {
+    "Cajun Gumbo": [
+      "The Holy Trinity",
+      "Okra",
+      "Andouille Sausage",
+      "Monkfish",
+      "Chicken Stock",
+      "Cayenne",
+      "Smoked Paprika"
+    ],
+    "others": ["Bread Bowls", "Fried Okra"]
+  }
 }
