@@ -1,113 +1,96 @@
 <script lang="ts">
-  import Menu from "$lib/Menu.svelte";
+  import menus from "../assets/menu.json";
+  import Gallery from "$lib/PartialGallery.svelte";
+
+  let entries: Array<[string, object]> = Object.entries<object>(menus);
+  let week = entries.length - 1;
+  let label: string;
+  let menu: Array<[string, Array<string>]>;
+
+  $: {
+    label = entries[week][0];
+    menu = Object.entries(entries[week][1]);
+  }
 </script>
 
-<header>
-  <div class="img u-full-width" alt="The whole gang, except Meagan" />
-  <div class="container">
-    <h1 class="row">
-      <span class="columns three">📐🍱🥑</span>
-      <strong class="columns six"
-        >fridaydinners<span class="text-rainbow">.party</span></strong
-      >
-      <span class="columns three">🥢🔨🍴</span>
-    </h1>
-  </div>
-</header>
-
-<nav class="container">
+<section id="menu" class="container">
+  <h3>
+    <small
+      role="button"
+      tabindex="0"
+      class:disabled={week <= 0}
+      on:keydown={(e) => {
+        if (e.key == "Enter") week -= 1;
+      }}
+      on:click={(e) => (week -= 1)}>&lt;&lt;</small
+    >
+    <span>Menu</span>
+    <small
+      tabindex="0"
+      role="button"
+      class:disabled={week >= entries.length - 1}
+      on:keydown={(e) => {
+        if (e.key == "Enter") week += 1;
+      }}
+      on:click={(e) => (week += 1)}>&gt;&gt;</small
+    >
+    <p>{label}</p>
+  </h3>
   <ul>
-    <li><a href="#menu">Menu</a></li>
-    <li><a href="#gallery">Gallery</a></li>
-    <li><a href="/pct">Meagan's Hats</a></li>
+    {#each menu as entry}
+      {#if entry[0] != "others"}
+        <li>
+          {entry[0]}
+          <ul>
+            {#each entry[1] as food}
+              <li>{food}</li>
+            {/each}
+          </ul>
+        </li>
+      {:else}
+        {#each entry[1] as food}
+          <li>{food}</li>
+        {/each}
+      {/if}
+    {/each}
   </ul>
-</nav>
+</section>
 
-<Menu />
-
-<footer class="container">
-  <p>Sprouted 🌱 at Olin and without 🥜</p>
-</footer>
+<Gallery {week} />
 
 <style lang="scss">
-  header {
-    .img {
-      background-image: url("/background.jpg");
-      background-size: cover;
-      background-position: center;
-      height: 35rem;
-    }
+  #menu {
+    h3 {
+      text-align: center;
 
-    h1 {
-      letter-spacing: 0.25rem;
-    }
-  }
-
-  nav {
-    padding: 2rem 0;
-    margin-top: 2rem;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    max-width: 480px;
-
-    ul {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      list-style: none;
-      margin: 0;
-
-      li {
-        text-transform: uppercase;
+      p {
         margin: 0;
-        text-align: center;
-        flex: 0 1 auto;
+        padding: 0;
+        font-size: 0.5em;
+      }
 
-        a {
-          text-decoration: none;
-          color: #222;
-          letter-spacing: 0.2rem;
-          font-weight: 600;
+      small {
+        font-size: 0.5em;
+        text-decoration: underline;
+        cursor: pointer;
 
-          &:hover {
-            color: #0fa0ce !important;
-          }
+        &.disabled {
+          visibility: hidden;
         }
       }
+
+      span {
+        margin: 0 6rem;
+      }
     }
-  }
 
-  .text-rainbow {
-    background-image: linear-gradient(
-      to left,
-      violet,
-      indigo,
-      blue,
-      green,
-      orange,
-      red
-    );
-    background-clip: text;
-    color: transparent;
-  }
+    & > ul {
+      width: fit-content;
+      margin: 0 auto 2rem auto;
 
-  :global(h3, h1) {
-    margin-top: 6rem;
-    text-align: center;
-  }
-
-  footer {
-    margin-top: 3rem;
-    text-align: center;
-  }
-
-  @media (max-width: 960px) {
-    header h1 .columns {
-      width: 100%;
-      float: left;
-      box-sizing: border-box;
-      margin-left: 0;
-      padding-top: 1rem;
+      @media (min-width: 550px) {
+        font-size: 1.6rem;
+      }
     }
   }
 </style>

@@ -18,7 +18,7 @@
   }
 </script>
 
-<section id="gallery" class="container">
+<div class="container">
   {#each rows as row}
     <div class="row">
       {#each row as image}
@@ -32,11 +32,13 @@
       {/each}
     </div>
   {/each}
-</section>
+</div>
 
 <style lang="scss">
-  .row {
-    display: flex;
-    justify-content: center;
+  img {
+    @media (max-width: 550px) {
+      display: block;
+      margin: 0.5rem auto;
+    }
   }
 </style>

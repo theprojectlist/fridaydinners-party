@@ -6,8 +6,12 @@
   ];
 </script>
 
-<div class="container">
-  <h1>Meagan's Hats! ⛰️</h1>
+<svelte:head>
+  <title>Meagan's Hats | FD</title>
+</svelte:head>
+
+<section id="pct" class="container">
+  <h2>Meagan's Hats! ⛰️</h2>
 
   <p>
     Alright y'all, here's what's going on: if you haven't heard, <a
@@ -34,32 +38,9 @@
     <div class="row">
       {#each row as image}
         <div class="one-third column">
-          <img class="u-max-full-width" src={`/hats/${image}.jpg`} alt="hat" />
+          <img class="u-max-full-width" src="/hats/{image}.jpg" alt="hat" />
         </div>
       {/each}
     </div>
   {/each}
-</div>
-
-<footer class="container">
-  <p>Crocheted 🧶 for cash by hand 💸</p>
-</footer>
-
-<style lang="scss">
-  .container {
-    margin-top: 5rem;
-
-    h1 {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    p {
-      font-size: 1.75rem;
-    }
-  }
-
-  footer {
-    text-align: center;
-  }
-</style>
+</section>
