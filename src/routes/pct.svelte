@@ -25,10 +25,11 @@
   <p>
     I'm selling them for $25 + shipping (or more if you want to by us you know, a couple
     burgers each or a night at a hostel). <b
-      >If you're interested, dm me (<a
-        href="https://www.instagram.com/meagangoesoutside">@meagangoesoutside</a
-      > on IG) with a preference like "striped", "muted", or "absolutely crazy" and I'll
-      pick a hat that matches your chosen vibe.</b
+      >If you're interested, email me at
+      <a href="mailto:orangewolf10@gmail.com">orangewolf10@gmail.com</a> or dm
+      <a href="https://www.instagram.com/meagangoesoutside">@meagangoesoutside</a>
+      on IG with a preference like "striped", "muted", or "absolutely crazy" and I'll pick
+      a hat that matches your chosen vibe.</b
     >
   </p>
 
